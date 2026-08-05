@@ -1,5 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Header from "../../components/header";
+import { Inter } from "next/font/google";
+import Footer from "../../components/footer";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
 
 export const metadata: Metadata = {
   title: "Stock Hub",
@@ -13,10 +21,14 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
-      className={`h-full antialiased`}
+      lang="pt-br"
+      className={`${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col font-sans bg-white ">
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
