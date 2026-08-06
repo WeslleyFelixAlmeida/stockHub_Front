@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <footer className="w-full h-30 bg-white flex justify-between items-center text-blue-500 flex-col text-lg">
-      <ul className="columns-2 w-full my-auto pl-90 box-border font-medium">
+    <footer className="w-full h-40 bg-white flex justify-between items-center text-blue-500 flex-col text-lg">
+      <ul className="columns-2 w-full my-auto pl-90 box-border font-medium space-y-2.5">
         <li>Sobre nós</li>
         <li>Política de privacidade</li>
         <li>Contatos</li>
