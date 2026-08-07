@@ -14,19 +14,12 @@ export const metadata: Metadata = {
   description: "Gerenciamento de estoque",
 };
 
-export default function RootLayout({
+export default function PrivateLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="pt-br"
-      className={`${inter.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col font-sans bg-white ">
-        {children}
-      </body>
-    </html>
+    <main className={`${inter.variable} h-full antialiased`}>{children}</main>
   );
 }
